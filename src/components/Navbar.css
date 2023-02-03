@@ -1,0 +1,118 @@
+.navbar {
+  background: #fff;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  /* padding: 0 !important; */
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  width: 100%;
+}
+.navbar-logo {
+  color: #fff;
+  justify-self: start;
+  margin-left: 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.nav-menu {
+  display: grid;
+  grid-template-columns: repeat(4, auto);
+  grid-gap: 10px;
+  list-style: none;
+  text-align: center;
+  width: 60vw;
+  justify-content: end;
+  margin-bottom: 0;
+  margin-right: 2rem;
+}
+.nav-links {
+  color: var(--dark);
+  font-size: 25px;
+  padding: 5px 0;
+  margin: 10px;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+
+  background: no-repeat 0 100%;
+  background-image: linear-gradient(var(--primary), var(--primary));
+  background-size: 0% 2px;
+  transition: background-size 0.3s ease;
+}
+
+.nav-links.active {
+  background-size: 100% 2px;
+}
+.menu-icon {
+  display: none;
+}
+.nav-links:hover {
+  color: inherit;
+}
+@media screen and (max-width: 960px) {
+  .menu-icon {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 30px;
+    transform: translate(-100%, 60%);
+    font-size: 1.8rem;
+    cursor: pointer;
+  }
+  .navbar-logo {
+    position: absolute;
+    left: 30px;
+  }
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: flex-start;
+    height: 100vh;
+    position: absolute;
+    top: 100px;
+    left: -100%;
+    opacity: 1;
+    transition: all 0.5s ease;
+    padding: 20px 0;
+  }
+  .nav-menu.active {
+    background: var(--dark);
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
+  }
+  .nav-item {
+    position: relative;
+    width: 100%;
+    font-size: 2rem;
+  }
+  .nav-links {
+    color: #fff;
+    padding: 10px 0;
+    margin: 0px;
+    transition: background 0.5s ease;
+  }
+  .nav-links:hover {
+    transition: background 0.5s ease;
+    background: #fff;
+    color: var(--dark);
+  }
+  .nav-links.active {
+    background-size: 0;
+  }
+}

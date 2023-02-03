@@ -1,0 +1,12 @@
+.news-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.news-img {
+  width: 270px;
+  margin: 5px;
+}

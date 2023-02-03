@@ -1,0 +1,35 @@
+.banner-container {
+  height: 80vh;
+  background-image: url("../../public/images/old-town.png");
+  background-size: cover;
+}
+.banner-content {
+  height: 100%;
+}
+.banner-content,
+.greetings {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1.banner-text {
+  font-size: 4rem;
+}
+h3.banner-text {
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 960px) {
+  .banner-container {
+    height: 50vh;
+  }
+
+  h1.banner-text {
+    font-size: 3rem;
+  }
+  h3.banner-text {
+    font-size: 0.8rem;
+  }
+}

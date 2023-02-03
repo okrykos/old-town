@@ -1,0 +1,102 @@
+.footer-container {
+  background-color: var(--dark);
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  justify-content: space-between;
+}
+.footer-location-container {
+  display: grid;
+  max-width: 300px;
+}
+.footer-logo {
+  justify-self: start;
+  margin: 0 20px;
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+.footer-location {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+}
+
+.footer-text {
+  color: #fff;
+  font-size: 15px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: 400;
+  max-width: 200px;
+}
+.footer-location-wrapper {
+  display: flex;
+  align-items: center;
+}
+.footer-location-wrapper i {
+  color: var(--primary);
+  font-size: 20px;
+  width: 30px;
+  margin: 10px;
+}
+.footer-navigation {
+  display: flex;
+}
+.footer-link-items {
+  display: flex;
+  flex-direction: column;
+}
+.footer-links,
+.footer-nav {
+  color: #fff;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.3s ease-out;
+  font-size: 20px;
+  padding: 10px;
+}
+.footer-links:hover,
+.footer-nav:hover {
+  color: var(--primary);
+  transition: all 0.3s ease-out;
+}
+.footer-links i,
+.footer-nav i {
+  color: var(--primary);
+  padding: 0 10px;
+  width: 50px;
+}
+.payment-logo i {
+  color: #fff;
+  font-size: 50px;
+  padding: 10px;
+}
+.footer-nav-items {
+  display: flex;
+  flex-direction: column;
+}
+.footer-nav {
+  font-size: 20px;
+  padding: 10px;
+}
+.footer-headings {
+  padding: 5px;
+  background: no-repeat 0 100%;
+  background-image: linear-gradient(var(--primary), var(--primary));
+  background-size: 100% 2px;
+}
+
+@media screen and (min-width: 500px) {
+  .footer-location-wrapper,
+  .footer-navigation,
+  .footer-info {
+    padding: 0 10px;
+  }
+  .footer-container {
+    padding: 30px 40px;
+  }
+}
